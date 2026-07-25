@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  background-color:rgb(245, 247, 248) ;
+  width: 100;
+  backdrop-filter: blur(10px);
+  margin-bottom: 5px;
+}
+.navbar h2{
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar img{
+  height: 65px;
+  width: 65px;
+}
+.navbar a{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  margin-left: 18px;
+
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/033/193/254/small/banner-with-ice-cream-in-a-waffle-cone-on-a-summer-day-generative-ai-free-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.hero h1 {
+  font-size: 85px;
+  color: rgb(234, 242, 132);
+  text-shadow: 5px 5px 4px black;
+}
+.hero p {
+  font-size: 54px;
+  color: rgb(237, 240, 206);
+  text-shadow: 2px 2px 3px black;
+}
+.hero button {
+  padding: 12px 24px;
+  font-size: 24px;
+  font-weight: 600;
+  background:#ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: #ff4b4b;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  padding: 50px;
+  background-image: url(https://www.idealicecream.com/wp-content/uploads/2018/02/home-ideal-icecreams.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 30px;
+  margin-bottom: 5px;  
+}
+.story h2 {
+  font-size: 70px;
+  font-weight: 900;
+  color: rgb(5, 5, 5);
+  text-shadow: 3px 3px 4px rgb(242, 189, 189);
+}
+.story p {
+  font-size: 44px;
+  font-weight: 800;
+  color: rgb(8, 8, 8);
+  max-width: 800px;
+  text-align: center;
+}
+.title {
+  font-size: 50px;
+  text-shadow: 2px 2px 3px rgb(56, 57, 57);
+  color: rgb(4, 4, 4);
+  text-align: center;
+  margin: 20px 0;
+}
+#flavours {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px;
+}
+.productcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.productcard h2 {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+}
+.productcard:hover {
+  transform: translateY(15px);
+  
+}
+.productcard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.productcard h3 {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px rgb(233, 162, 162);
+  margin: 8px 0;
+}
+.productcard button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.productcard button:hover {
+  background-color: #ff4b4b;
+}
+.cart {
+  background-color: #f5eebb;
+  width: 500px;
+  margin: 40px auto;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart h2 {
+  color: #2b2b2b;
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f4a3a3;
+  padding-bottom: 10px;
+}
+
+.cart p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #444;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0e0dd;
+  margin: 0;
+}
+
+.cart h3 {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #1a1a1a;
+  text-align: right;
+}
+
+.cart button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #ff5c5c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cart button:hover {
+  background-color: #e94b4b;
+}
+
+.order-success {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  background-color: #2b2a2a;
+  margin-top: 2px;
+}
