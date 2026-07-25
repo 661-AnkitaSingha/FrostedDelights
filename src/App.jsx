@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client'
 import { useState } from 'react'
 
 import Navbar from "./components/Navbar"
@@ -106,7 +105,7 @@ const App = () => {
           />
         ))}
       </div>
-      <Cart cartItem={cart} />
+      <Cart cartItem={cart} onCheckout={() => setCart([])} />
       <section id='contact'>
         <h2>Contact Us</h2>
         <p>Email : frosteddelights@gmail.com</p>
